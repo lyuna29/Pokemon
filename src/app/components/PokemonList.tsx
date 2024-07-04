@@ -21,7 +21,7 @@ const PokemonList: React.FC = () => {
     <div className="flex flex-wrap justify-center items-center ">
       {pokemons.map((pokemon) => (
         <div
-          className="w-36 h-40 flex justify-center items-center bg-white  m-2 p-2 border border-solid rounded-md "
+          className="w-36 h-40 flex justify-center items-center bg-white/80  m-2 p-2 border border-solid rounded-md "
           key={pokemon.id}
         >
           <Link href={`/pokemon/${pokemon.id}`}>
@@ -31,8 +31,8 @@ const PokemonList: React.FC = () => {
               width={96}
               height={96}
             />
-            <p>{pokemon.korean_name}</p>
-            <p>도감번호: {pokemon.id}</p>
+            <p className="flex justify-center">{pokemon.korean_name}</p>
+            <p className="flex justify-center">도감번호: {pokemon.id}</p>
           </Link>
         </div>
       ))}

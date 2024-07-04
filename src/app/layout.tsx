@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className=" bg-green-800">
         <header className="w-full h-auto mt-10 text-center flex justify-center">
-          <Image className="w-[400px] h-auto" src={logo} alt="로고당" />
+          <Image className="w-[400px] h-52" src={logo} alt="로고당" />
         </header>
         {children}
       </body>
