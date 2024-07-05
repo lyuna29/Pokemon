@@ -30,7 +30,7 @@ const PokemonDetailPage = async ({ params }: { params: { id: string } }) => {
         <div className="text-center my-2">
           <p className="font-bold mb-5">기술:</p>
           <div className="flex flex-wrap gap-2 items-center text-center justify-center">
-            {pokemon.moves.map((move) => (
+            {pokemon.moves.map((move: any) => (
               <div key={move.move.name}>{move.move.korean_name}</div>
             ))}
           </div>
